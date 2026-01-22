@@ -1,0 +1,5 @@
+{
+  "name": "UniGrade - Gestion de Requêtes",
+  "description": "Application de gestion des requêtes de correction de notes universitaires pour étudiants, professeurs et administrateurs.",
+  "requestFramePermissions": []
+}
