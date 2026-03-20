@@ -1,4 +1,3 @@
-import { Injectable } from '@angular/core';
 import { Injectable, inject } from '@angular/core';
 import { ConfigService } from '../config/app.config';
 
@@ -20,7 +19,6 @@ export enum LogLevel {
   providedIn: 'root'
 })
 export class LoggerService {
-  private isDevelopment = !this.isProduction();
   private config = inject(ConfigService);
   private isDevelopment = !this.config.isProduction();
 

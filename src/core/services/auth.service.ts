@@ -2,7 +2,7 @@ import { Injectable, inject, signal, computed } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { of, Observable } from 'rxjs';
 import { User, UserDTO, LoginDTO, RegisterDTO, AuthResponseDTO } from '../models/user.model';
 import { ConfigService } from '../config/app.config';
 import { LoggerService } from './logger.service';
@@ -208,7 +208,7 @@ export class AuthService {
   /**
    * Gère l'erreur de login
    */
-  private handleLoginError(error: any): typeof of {
+  private handleLoginError(error: any): Observable<null> {
     this.logger.error('Login error', error);
     this.errorHandler.handleError(error);
     return of(null);
