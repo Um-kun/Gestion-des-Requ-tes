@@ -191,4 +191,4 @@ Propriétaire - Tous droits réservés
 
 **Version**: 2.0  
 **Dernière mise à jour**: Mars 2026  
-**Auteur**: Lione Yengue Um
+**Auteur**: Lionel Yengue Um
